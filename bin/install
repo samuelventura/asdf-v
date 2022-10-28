@@ -25,4 +25,5 @@ git clone https://github.com/vlang/c2v.git
 cd c2v
 $V .
 cd ..
-mv c2v/c2v $ASDF_INSTALL_PATH/bin/
+mv c2v $ASDF_INSTALL_PATH/
+ln -s $ASDF_INSTALL_PATH/c2v/c2v $ASDF_INSTALL_PATH/bin/c2v
