@@ -18,3 +18,11 @@ mkdir -p ${ASDF_INSTALL_PATH}
 mv v $ASDF_INSTALL_PATH/
 mkdir -p $ASDF_INSTALL_PATH/bin
 ln -s $ASDF_INSTALL_PATH/v/v $ASDF_INSTALL_PATH/bin/v
+
+V=$ASDF_INSTALL_PATH/v/v
+
+git clone https://github.com/vlang/c2v.git
+cd c2v
+$V .
+cd ..
+mv c2v/c2v $ASDF_INSTALL_PATH/bin/
